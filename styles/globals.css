@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  max-height: 100%;
+}
+
+h1 {
+  @apply text-gray-800 text-xl font-semibold mb-4;
+}
+
+.heading {
+  @apply text-blue-500 font-semibold;
+}
+
+input,
+textarea,
+select {
+  @apply border border-gray-200 w-full p-1 rounded-sm mb-2 shadow-sm px-2;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  @apply border-blue-900;
+}
+
+label {
+  @apply text-gray-600 text-sm;
+}
+
+table.basic {
+  @apply w-full bg-white rounded-sm shadow-md;
+}
+
+table.basic thead tr td,
+table.basic thead tr th {
+  @apply text-sm text-gray-600 border-b border-gray-200 uppercase px-4;
+}
+
+table.basic tr td {
+  @apply px-4 p-1;
+}
+
+table.basic a {
+  @apply px-4 rounded-sm py-1 inline-flex mx-1 items-center gap-1;
+}
+
+.btn-primary {
+  @apply bg-primary text-white  px-4 rounded-sm py-1 shadow-sm;
+}
+
+.btn-red,
+.btn-default {
+  @apply px-4 py-1 rounded-md;
+}
+
+.btn-red {
+  @apply bg-red-300 text-red-600 px-4 rounded-sm py-1 shadow-sm;
+}
+
+.btn-red:hover {
+  @apply bg-red-600 text-red-300 px-4 rounded-sm py-1;
+}
+
+.btn-default {
+  @apply bg-white text-gray-700 border border-gray-400  px-4 rounded-sm py-1 shadow-sm;
+}
+
+.btn-default:hover {
+  @apply bg-gray-500 text-white  px-4 rounded-sm py-1;
+}
